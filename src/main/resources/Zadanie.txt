@@ -1,0 +1,8 @@
+Zadanie domowe: Stwórz program podobny do tego z zajęć który umożliwia dodawanie i wyświetlanie listy książek (isbn, tytuł, opis, data wydania, kategoria)
+
+ Punktacja
+ • wyświetlanie listy książek (tytuł) na stronie głównej (1 pkt)
+ • wyświetlenie szczegółów książki po naciśnięciu na link (1 pkt)
+ • edycja książki (1 pkt)
+ • usuwanie książki (1 pkt)
+ • dodaj możliwość sortowania książek po isbn, tytule, dacie wydania (1 pkt)
