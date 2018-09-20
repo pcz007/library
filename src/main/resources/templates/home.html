@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Biblioteka pełna książek</title>
 </head>
 <body>
 
-<a href="/dodawanie">Dodaj nową książkę</a>
+<h3>O czym chcesz poczytać?</h3>
 
 <ul>
     <li th:each="book: ${books}">
-        <a th:href="'/book/' + ${book.id}" th:text="${book.author}">Tutaj tresc linku</a>
+        <a th:href="'/book/' + ${book.id}" th:text="${book.author} + ' - ' + ${book.title}"  >Przejdź do książki</a>
         <span th:text="' - ' + ${book.category}"></span>
     </li>
 </ul>
+<a href="/dodawanie">Dodaj nową książkę</a>
 
 </body>
 </html>

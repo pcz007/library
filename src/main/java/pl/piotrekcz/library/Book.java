@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class Book {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; // czy musi to być Long typu obiektowego? nie może to być typ prosty?
 
     private String author;
@@ -22,6 +22,8 @@ public class Book {
 
     @Enumerated(EnumType.STRING)
     private Category category;
+
+
 
     public Long getId() {
         return id;

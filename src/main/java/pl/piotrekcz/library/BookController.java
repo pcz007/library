@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class BookController {
 
-    private BookRepository bookRepository;
+    private BookRepository bookRepository; //nie może tu być kontroler domyślny gdyż bookRepository dostanie null
 
-    public BookController(BookRepository bookRepository) {
+    public BookController(BookRepository bookRepository) { //ooo właśnie tutaj musi być zwykły
         this.bookRepository = bookRepository;
     }
 
